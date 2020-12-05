@@ -1,0 +1,7 @@
+{
+  "name": "va3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
