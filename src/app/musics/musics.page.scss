@@ -1,0 +1,14 @@
+div.music {
+  flex: 1;
+  display: block;
+}
+
+.music-box {
+  cursor: pointer;
+
+  &:hover {
+    * {
+      opacity: 0.9;
+    }
+  }
+}

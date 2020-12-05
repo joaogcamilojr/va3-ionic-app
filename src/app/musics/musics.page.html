@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div>
+      <ion-title>Músicas</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<IonList>
+    <h6 *ngIf="musics.length == 0">Você está sem musicas, faça ao menos um cadastro!</h6>
+		<IonItem class="music-box" *ngFor="let music of musics">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="{{ music.image_url }}">
+        </ion-thumbnail>
+        <div class="music">
+          <ion-label><strong><ion-icon name="play"></ion-icon> {{ music.title }}</strong></ion-label>
+          <ion-label>R$ {{ music.value }}, 00</ion-label>
+          
+        </div>
+        
+      </ion-item>
+		</IonItem>
+	</IonList>
+</ion-content>
